@@ -1,0 +1,78 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head lang="en">-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title></title>-->
+    <!--<link rel="stylesheet" href="../css/normalize.css"/>-->
+    <link rel="stylesheet" href="../css/login.css"/>
+    <!--<script src="../js/login/login.js"></script>-->
+<!--</head>-->
+<!--<body>-->
+    <header>
+        <img class="logo" src="../images/login/logo_e.png" alt=""/>
+        <ul class="head-nav">
+            <li><a href="home.html">YOHO!有货</a></li>
+            <li><a/>
+                <!--<span  ng-hide="user" style="color: orangered;cursor: pointer"><img class="ph" src="../images/home/phone.png" alt=""/>{{phone[0].u_name}}:你已经登录！</span>-->
+                <!--<span ng-hide="user" style="cursor: pointer" ng-click="goLogin()" ng-hide="user" id="login"><img class="ph" src="../images/home/phone.png" alt=""/>请登录！</span>-->
+            </a></li>
+            <li><a style="cursor: pointer" ng-click="goReg()"><img class="ph" src="../images/login/phone.png" alt=""/>注册</a></li>
+            <li><a style="cursor: pointer">MY有货</a></li>
+            <li><a style="cursor: pointer">订单中心</a></li>
+            <li><a style="cursor: pointer">帮助中心</a></li>
+            <li><a style="cursor: pointer"><img class="ph" src="../images/login/phone.png" alt=""/>400-889-9646</a></li>
+            <div class="clear"></div>
+        </ul>
+        <div class="clear"></div>
+    </header>
+<!-------------------------------->
+<div class="log-content-warp">
+    <div class="log-con-left">
+        <a style="cursor: pointer"><img src="../images/login/right.png" alt=""/></a>
+    </div>
+    <!----------------------------------------------------------->
+    <div class="log-con-right">
+        <div class="log-con-right1 box"><p class="login">会员登录</p></div>
+        <div class="log-con-right2 box">
+            <input ng-model="userPhone" ng-blur="isPhone()" class="input" type="text" placeholder="请输入正确的手机号码！"/>
+            <span ng-show="tips4" style="color:limegreen;font-size: 14px;">{{userInfo}}</span>
+            <span ng-hide="tips4" style="color:red;font-size: 14px; ">{{userInfo}}</span>
+        </div>
+        <div class="log-con-right3 box">
+            <input ng-model="userPassword" class="input" type="password" placeholder="8位以上包含字母数字的密码！"/>
+            <span ng-show="tips5" style="color:limegreen;font-size: 14px;">{{pwdInfo}}</span>
+            <span ng-hide="tips5" style="color:red;font-size: 14px; ">{{pwdInfo}}</span>
+        </div>
+        <div class="log-con-right4 box">
+            <input ng-click="submit()" class="input2" type="button" value="登 录"/>
+        </div>
+        <div class="log-con-right5 box">
+            <input class="checkbox" type="checkbox"/> 记住我
+            <span class="user-info3 user"></span>
+            <span class="login-password"><a style="cursor: pointer">密码</a>|<a style="cursor: pointer">快速注册</a></span>
+        </div>
+        <div class="log-con-right6 box">
+            <a style="cursor: pointer"><img src="../images/login/qq.png" alt=""/></a>
+            <a style="cursor: pointer"><img src="../images/login/renren.png" alt=""/></a>
+            <a style="cursor: pointer"><img src="../images/login/weibo.png" alt=""/></a>
+            <a style="cursor: pointer"><img src="../images/login/zhifubao.png" alt=""/></a>
+            <a style="cursor: pointer"><img src="../images/login/iconfont-weixin.png" alt=""/></a>
+            <a style="cursor: pointer"><img src="../images/login/douban.png" alt=""/></a>
+        </div>
+    </div>
+</div>
+<!---------------------------------->
+    <footer>
+        <ul class="footer-ul">
+            <li><a style="cursor: pointer">关于我们</a></li>
+            <li><a style="cursor: pointer">联系我们</a></li>
+            <li><a style="cursor: pointer">版权声明</a></li>
+            <li><a style="cursor: pointer">隐私条款</a></li>
+            <li><a style="cursor: pointer">意见反馈</a></li>
+            <li id="footer-li-last"><a style="cursor: pointer">友情链接</a></li>
+            <div class="clear"></div>
+        </ul>
+        <p class="footer-p">CopyRight &copy; 2015 南京新與力文化傳播有限公司 蘇ICP備09011225號</p>
+    </footer>
+<!--</body>-->
+<!--</html>-->

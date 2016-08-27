@@ -1,0 +1,198 @@
+body{
+    font-size: 16px;
+    /*font-family: "Mriosoft YaHei","Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font-family: "Microsoft YaHei","Helvetica Neue";
+}
+.clear{
+    clear: both;
+}
+header{
+    width: 7.5rem;
+    height: 0.62rem;
+    background: #3e3e3e;
+    padding-top: 0.18rem;
+}
+.header-coat{
+    width: 6.95rem;
+    height: 0.5rem;
+    margin: 0 auto;
+}
+.imgs {
+    display: block;
+    float: left;
+}
+.header-img1{
+    width: 0.5rem;
+    height: 0.47rem;
+}
+.header-img2{
+    width: 0.45rem;
+    height: 0.47rem;
+    margin-left: 0.3rem;
+}
+.header-img3{
+    height: 0.55rem;
+    width: 2.12rem;
+    margin-left: 1.25rem;
+}
+.header-img4{
+    float: right;
+    width: 0.48rem;
+    height: 0.47rem;
+}
+/*---------content-warp-------------*/
+.content-warp{
+    width: 7.5rem;
+    /*height: 50rem;*/
+    padding-bottom: 0.2rem;
+}
+.content-change{
+    /*outline: 1px solid green;*/
+    position: relative;
+    width: 7.5rem;
+    height: 3.65rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.list-img{
+    /*outline: 1px solid red;*/
+    position: absolute;
+    left: -7.5rem;
+    top:0;
+    width: 60.0rem;
+    height: 3.65rem;
+}
+.list-img img{
+    width: 7.5rem;
+    height: 3.65rem;
+    float: left;
+}
+/*-----------content2-coat-----------*/
+.content2-coat{
+    width: 7.5rem;
+    padding: 0.2rem 0;
+}
+.content2{
+    width: 6.45rem;
+    margin: 0 auto;
+    /*outline: 1px solid;*/
+}
+.content2 span{
+    text-align: center;
+    display: inline-block;
+    width: 1.08rem;
+    /*height: 1.06rem;*/
+    margin-left:0.7rem;
+    float: left;
+}
+.content2 img{
+    width: 1.08rem;
+    height: 1.06rem;
+}
+.first-span{
+    margin-left: 0 !important;
+}
+.content2 span p{
+    color: #262626;
+    font-size: 0.18rem;
+    font-weight: bold;
+}
+.gray{
+    width: 7.5rem;
+    height: 0.3rem;
+    margin: 0;
+    background: #f0f0f0;
+}
+.chaoliu{
+    width: 7.5rem;
+    margin: 0;
+    height: 2.35rem;
+    background: url("../images/m-home/IMG_1396_33.png") no-repeat;
+    background-size: cover;
+}
+.content3-warp{
+    width: 7.5rem;
+}
+.content3{
+    margin:  0 auto;
+    width: 7.5rem;
+    height:4.05rem;
+    border-bottom: 0.01rem solid  #262626;
+    border-top: 0.01rem solid  #262626;
+}
+.content3 img{
+    margin: 0 !important;
+    float: left;
+    width: 1.87rem;
+    height:2.02rem;
+}
+.cnt-last-img{
+    width: 3.75rem !important;
+    height:2.02rem !important;
+}
+.chaoliu2{
+    width: 7.5rem;
+    margin: 0;
+    height: 2.35rem;
+    background: url("../images/m-home/IMG_1425_10.png") no-repeat;
+    background-size: cover;
+}
+.chaoliu3{
+    width: 7.5rem;
+    height: 0.3rem;
+    font-size: 0.3rem;
+    text-align: center;
+    color:#262626;
+}
+.content4{
+    margin:  0 auto;
+    width: 6.6rem;
+    height: 3.3rem;
+}
+.content4 img{
+    margin: 0 !important;
+    float: left;
+    width: 3.3rem;
+    height: 3.3rem;
+}
+/*--------------------------footer----------------------*/
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 7.5rem;
+    background: #ffffff;
+    /*height: 4rem;*/
+    padding: 0.1rem 0;
+    border-top: 0.01rem solid #999999;
+}
+.img-caot{
+    width: 6.45rem;
+    margin: 0 auto;
+}
+.img-caot img{
+    vertical-align: middle;
+    float: left;
+    margin-right: 1rem;
+}
+.footer-img1{
+    width: 0.47rem;
+    height: 0.78rem;
+}
+.footer-img2{
+    width: 0.46rem;
+    height: 0.78rem;
+}
+.footer-img3{
+    width: 0.45rem;
+    height: 0.78rem;
+}
+
+.footer-img4{
+    width: 0.63rem;
+    height: 0.78rem;
+}
+#footer-img5{
+    width: 0.43rem;
+    height: 0.78rem;
+    margin: 0 !important;
+}

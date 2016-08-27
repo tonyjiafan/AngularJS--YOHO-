@@ -1,0 +1,90 @@
+body{
+    font-size: 16px;;
+    font-family: "Microsoft YaHei","Helvetica Neue";
+    background: #454545;
+}
+.clear{
+    clear: both;
+}
+header{
+    width: 7.5rem;
+    height: 0.62rem;
+    padding-top: 0.18rem;
+}
+.header-coat{
+    width: 6.95rem;
+    height: 0.5rem;
+    margin: 0 auto;
+}
+.header-span1{
+    display: block;
+    float: left;
+}
+.header-span1 img{
+    vertical-align: middle;
+    width: 0.24rem;
+    height: 0.43rem;
+}
+.header-span2{
+    margin-left: 2.65rem;
+    color: white;
+    font-size: 0.3rem;
+}
+.header-span3{
+    display: block;
+    float: right;
+}
+.header-span3 a{
+    font-size: 0.3rem;
+    color: white;
+}
+/*--------------------------------------------*/
+.content-warp{
+    width: 7.5rem;
+    padding: 1rem 0 3rem;
+    background: #454545;
+}
+.content1{
+    width: 6.5rem;
+    margin:  0 auto 1rem ;
+    padding: 0.5rem 0.2rem;
+    border: 0.01rem solid #999999;
+    border-radius: 0.05rem;
+    text-align: center;
+}
+.input-coat{
+    text-align: center;
+    margin: 0.4rem 0 ;
+}
+.user-info{
+    height: 0.5rem;
+    width: 6rem;
+    text-indent: 2em;
+    border: 0.01rem solid #999999;
+    border-radius: 0.05rem;
+    outline: none;
+    font-size: 0.16rem;
+}
+.user-btn{
+    height: 0.5rem;
+    width: 6rem;
+    border: 0.01rem solid #999999;
+    border-radius: 0.05rem;
+    outline: none;
+    font-size: 0.18rem;
+    color: #262626;
+    font-weight: bold;
+    text-align: center;
+}
+.yoho-info{
+    width: 5rem;
+    margin: 0.1rem auto;
+    text-align: center;
+    color: #e8e8e8;
+    font-size: 0.2rem;
+}
+/*--------footer--------------*/
+footer{
+    width: 7.5rem;
+    background: #454545;
+}

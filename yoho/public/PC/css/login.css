@@ -1,0 +1,185 @@
+body{
+    font-family: "Helvetica", "Microsoft YaHei";
+    background: #ffffff;
+}
+.clear{
+    clear: both;
+}
+header{
+    width: 100%;
+    height: 70px;
+    /*background: #fdffff;*/
+    border-bottom: 2px solid #262626;
+}
+.logo{
+    float: left;
+    /*outline: 1px solid red;*/
+    margin: 20px 50px 10px 300px;
+}
+.head-nav{
+    margin: 0;
+    float: right;
+    /*outline: 1px solid green;*/
+    width: 700px;
+    list-style: none;
+}
+.head-nav li a{
+    font-size: 14px;
+    display: inline-block;
+    float: left;
+    text-decoration: none;
+    color: #262626;
+    padding: 0 10px;
+    line-height: 70px;
+}
+.head-nav li .ph{
+    vertical-align: middle;
+    transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+}
+.head-nav li a:hover{
+    text-decoration: underline;
+}
+.head-nav li a:hover .ph{
+    transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+}
+/*-----log-content-warp-----------------*/
+.log-content-warp{
+    width: 800px;
+    /*outline: 1px solid red;*/
+    height: 430px;
+    margin: 130px auto;
+}
+.log-con-left{
+    float: left;
+    text-align: center;
+    width: 400px;
+    height: 430px;
+    overflow: hidden;
+    border-right:  1px solid #b5b5b5;
+}
+.log-con-left img{
+    height: 430px;
+    transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+}
+.log-con-left img:hover{
+    transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+}
+.log-con-right{
+    /*outline: 1px solid green;*/
+    width: 390px;
+    height: 430px;
+    float: right;
+}
+.box{
+    width: 270px;
+    height: 45px;
+    /*outline: 1px solid ;*/
+    margin: 25px auto 0;
+}
+.log-con-right1{
+    margin:0 auto !important;
+    height: 20px;
+ }
+.login{
+    font-size: 20px;
+    color: #262626;
+}
+.input{
+    font-size: 13px;
+    width: 270px;
+    height: 45px;
+    border: 1px solid #aeaeae;
+    text-indent: 1em;
+    color: #262626;
+    /*margin: 15px auto;*/
+}
+.input2{
+    font-size: 18px;
+    width: 270px;
+    height: 45px;
+    color: white;
+    background: #ff1901;
+    border: 1px solid #ea1901;
+    outline: none;
+}
+.log-con-right5{
+    font-size: 14px;
+}
+.login-password{
+    display: inline-block;
+    margin-left: 110px;
+}
+.checkbox{
+    display: inline-block;
+    vertical-align: -2px;
+}
+.login-password a{
+    font-size: 14px;
+    color: #262626;
+    text-decoration: none;
+}
+.login-password a:hover{
+    color: orangered;
+    text-decoration: underline;
+}
+.log-con-right6{
+    text-align: center;
+}
+.log-con-right6 img{
+    margin: 0 5px;
+    transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+}
+.log-con-right6 img:hover{
+    transform: rotateY(60deg);
+    -moz-transform: rotateY(60deg);
+}
+/*---------footer---------------*/
+footer{
+    width:100%;
+    height: 70px;
+    /*background: #f5f5f5;*/
+    background: #262626;
+    padding: 20px 0;
+}
+.footer-ul{
+    /*outline: 1px solid red;*/
+    text-align: center;
+    width: 500px;
+    list-style: none;
+    margin: 10px auto;
+}
+.footer-ul li a{
+    text-decoration: none;
+    display: block;
+    float: left;
+    padding: 0 10px;
+    color: #fefdff;
+    font-size: 14px;
+    border-right: 1px solid #262626;
+}
+#footer-li-last a{
+    border-right: none;
+}
+.footer-p{
+    color: #fefdff;
+    width: 400px;
+    font-size: 12px;
+    margin: 0 auto;
+}
+/*=================后续添加的元素=====================*/
+/*.box{*/
+    /*display: block;*/
+    /*width: 100px;*/
+
+/*}*/

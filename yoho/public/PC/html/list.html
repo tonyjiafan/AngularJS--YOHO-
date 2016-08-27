@@ -1,0 +1,244 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head lang="en">-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title></title>-->
+    <!--<link rel="stylesheet" href="../css/normalize.css"/>-->
+    <link rel="stylesheet" href="../css/list.css"/>
+    <!--<script src="../javascripts2/jquery-1.11.2-min.js"></script>-->
+<!--</head>-->
+<!--<body>-->
+<header>
+    <span><img class="shake" src="../images/home/returntop.png"></span>
+    <div class="nav">
+        <ul class="nav-ul">
+            <li><a style="cursor:pointer">YOHO!</a></li>
+            <li><a style="cursor:pointer">YOHO!Buy</a></li>
+            <li><a style="cursor:pointer">YOHO!Boys</a></li>
+            <li><a style="cursor:pointer">YOHO!Girls</a></li>
+            <li><a style="cursor:pointer">YOHO!Show</a></li>
+            <li><a style="cursor:pointer">YOHO!OD</a></li>
+            <li><a>
+                <span ng-show="user" style="color: gold;cursor: pointer"><img class="ph" src="../images/home/phone.png" alt=""/>欢迎你:{{phone[0].u_name}}<label ng-click="logOut()" style="cursor: pointer;color:red;margin-left: 20px">注销</label></span>
+                <span ng-hide="user"  style="cursor: pointer" ng-click="goLogin()" id="login"><img class="ph" src="../images/home/phone.png" alt=""/>请登录</span>
+            </a></li>
+            <li ng-hide="user"><a style="cursor: pointer" ng-click="goReg()"><img class="ph" src="../images/home/phone.png" alt=""/>注册</a></li>
+            <div class="clear"></div>
+        </ul>
+    </div>
+    <div class="logo"><img src="../images/home/logo.png" alt=""/></div>
+</header>
+<!--============content!!!!start============-->
+<div class="content-warp">
+    <!--======content1=========-->
+    <div class="content-1">
+        <span><img src="" alt=""/></span>
+        <ul class="content-1-ul2">
+            <li class="content-1-ul2-phone"><a style="cursor:pointer"><img class="phone" src="../images/home/phone.png" alt=""/></a><span style="color:#256bff">get our app!</span></li>
+            <li>
+                <a style="position: relative"><input ng-blur="SearchImg()" ng-model="Searchlist" id="search" type="text" placeholder="Search!"/><span style="cursor: pointer;"><img class="fangdajing" src="../images/home/searchbutton.png" alt=""/></span></a>
+                <!--=================================================================-->
+            </li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    <!----------content-infoimg-------->
+    <div class="content-infoimg"></div>
+    <!-------------------------------->
+    <div class="contentinfo">
+        <p class="contentinfo-p">Shapeless</p>
+        <!------------->
+        <div class="content-info-left">
+            <div class="left-list">
+                <a class="info"><img class="jiantou" src="../images/list/list22_03.png" alt=""/>全部品类</a>
+                <div class="xiangxi">
+                    <p><a style="cursor:pointer">全部上衣</a></p>
+                    <p><a style="cursor:pointer">T恤</a></p>
+                    <p><a style="cursor:pointer">衬衫</a></p>
+                    <p><a style="cursor:pointer">外套</a></p>
+                    <p><a style="cursor:pointer">风衣</a></p>
+                    <p><a style="cursor:pointer">夹克</a></p>
+                    <p><a style="cursor:pointer">针织衫</a></p>
+                </div>
+            </div>
+            <div class="left-list">
+                <a class="info"><img class="jiantou" src="../images/list/list22_03.png" alt=""/>裤装</a>
+                <div class="xiangxi">
+                    <p><a style="cursor:pointer">全部裤装</a></p>
+                    <p><a style="cursor:pointer">休闲裤</a></p>
+                    <p><a style="cursor:pointer">短裤</a></p>
+                    <p><a style="cursor:pointer">打底裤</a></p>
+                </div>
+            </div>
+            <div class="left-list">
+                <a class="info"><img class="jiantou" src="../images/list/list22_03.png" alt=""/>包类/装备</a>
+                <div class="xiangxi">
+                <p><a style="cursor:pointer">全部包类</a></p>
+                <p><a style="cursor:pointer">钥匙包</a></p>
+                <p><a style="cursor:pointer">钱包</a></p>
+                <p><a style="cursor:pointer">手包</a></p>
+                </div>
+            </div>
+            <div class="left-list">
+                <a class="info"><img class="jiantou" src="../images/list/list22_03.png" alt=""/>配饰</a>
+                <div class="xiangxi">
+                    <p><a style="cursor:pointer">全部配饰</a></p>
+                    <p><a style="cursor:pointer">帽子</a></p>
+                    <p><a style="cursor:pointer">眼镜</a></p>
+                    <p><a style="cursor:pointer">围巾</a></p>
+                    <p><a style="cursor:pointer">饰品</a></p>
+                </div>
+            </div>
+            <!---------------------------->
+            <div class="left-list1-img">
+                <p class="jingdian">经典系列</p>
+                <div><a style="cursor:pointer"><img src="../images/list/01fdc7239b3444b4b17179c1660a0b3fc8.jpg" alt=""/></a></div>
+                <div><a style="cursor:pointer"><img src="../images/list/02ab2534d4c92108214048bb5239837f6b.jpg" alt=""/></a></div>
+                <div><a style="cursor:pointer"><img src="../images/list/02d8c09368165a5872b1c233f1a5ac6733.jpg" alt=""/></a></div>
+                <div><a style="cursor:pointer"><img src="../images/list/015e5a79705f81fcbe80364d869f5be093.jpg" alt=""/></a></div>
+                <div><a style="cursor:pointer"><img src="../images/list/022f5c85ccbd28f4949eaf773740227b8c.jpg" alt=""/></a></div>
+                <div><a style="cursor:pointer"><img src="../images/list/025ce3d1c64cc1685cb0550987f74ac6cb.jpg" alt=""/></a></div>
+                <div><a style="cursor:pointer"><img src="../images/list/02089a8284bb24878d3d181fd0ca36d477.jpg" alt=""/></a></div>
+                <div><a style="cursor:pointer"><img src="../images/list/01573439c42c3963f6ea8e4d4f7b17e3da.jpg" alt=""/></a></div>
+
+            </div>
+            <!---------------------------->
+            <div class="left-list-img">
+            <div><a style="cursor:pointer"><img src="../images/list/029f58e2de3e91e308de6912e5d31745d1.jpg" alt=""/></a></div>
+            <div><a style="cursor:pointer"><img src="../images/list/0225a3c6b6c6636f11008982729c5d60eb.jpg" alt=""/></a></div>
+            <div><a style="cursor:pointer"><img src="../images/list/02937d43875cb2e2316315394fa5fd7245.jpg" alt=""/></a></div>
+            <div><a style="cursor:pointer"><img src="../images/list/02aa344c9829968efd65b17ed86a67da77.jpg" alt=""/></a></div>
+            <div><a style="cursor:pointer"><img src="../images/list/02221bf3c1b45a6c3d7753efe7b95492c1.gif" alt=""/></a></div>
+            <div><a style="cursor:pointer"><img src="../images/list/qr_code.png" alt=""/></a></div>
+            </div>
+        </div>
+    <!--==================================-->
+        <div class="content-info-right">
+            <div id="border_top" class="right-list1">
+                <span class="span1">性别：</span>
+                <a style="cursor:pointer"> <span>BOYS</span></a>
+                <a style="cursor:pointer"> <span>GIRLS</span></a>
+            </div>
+            <div class="right-list1">
+                <span class="span1">价格：</span>
+                <a style="cursor:pointer"><span>￥0-239</span></a>
+                <a style="cursor:pointer"><span>￥240-299</span></a>
+                <a style="cursor:pointer"><span>￥299以上</span></a>
+                <span class="input-span">￥<input type="text"/> - <input type="text"/></span>
+            </div>
+            <div class="right-list1">
+                <span class="span1">风格：</span>
+                <a style="cursor:pointer"><span><input class="checkbox" type="button"/> 街头</span></a>
+                <a style="cursor:pointer"><span><input class="checkbox" type="button"/> 韩流</span></a>
+                <a style="cursor:pointer"><span><input class="checkbox" type="button"/> 欧美</span></a>
+                <a style="cursor:pointer"><span><input class="checkbox" type="button"/> 英伦</span></a>
+                <a style="cursor:pointer"><span><input class="checkbox" type="button"/> 中性</span></a>
+                <a style="cursor:pointer"><span><input class="checkbox" type="button"/> 运动</span></a>
+                <a style="cursor:pointer"><span><input class="checkbox" type="button"/> 简约</span></a>
+                <a style="cursor:pointer"><span><input class="checkbox" type="button"/> 商务</span></a>
+            </div>
+            <div class="right-list1">
+                <span class="span1">颜色：</span>
+                <span class="button-color blue"><input type="button" value="blue"/></span>
+                <span class="button-color huise"><input type="button" value="huise"/></span>
+                <span class="button-color black"><input type="button" value="black"/></span>
+                <span class="button-color white"><input type="button" value="white"/></span>
+                <span class="button-color green"><input type="button" value="green"/></span>
+            </div>
+            <div class="right-list1">
+                <span class="span1">尺码：</span>
+                <a style="cursor:pointer"><span>XL</span></a>
+                <a style="cursor:pointer"><span>L</span></a>
+                <a style="cursor:pointer"><span>M</span></a>
+                <a style="cursor:pointer"><span>S</span></a>
+                <a style="cursor:pointer"><span>XS</span></a>
+                <a style="cursor:pointer"><span>XXS</span></a>
+                <a style="cursor:pointer"><span>28英寸</span></a>
+                <a style="cursor:pointer"><span>30英寸</span></a>
+                <a style="cursor:pointer"><span>32英寸</span></a>
+                <a style="cursor:pointer"><span>34英寸</span></a>
+            </div>
+            <div class="right-list1">
+                <span class="span1">厚度：</span>
+                <a style="cursor:pointer"><span>厚</span></a>
+                <a style="cursor:pointer"><span>中</span></a>
+                <a style="cursor:pointer"><span>薄</span></a>
+            </div>
+            <div class="right-list1">
+                <span class="span1">版型：</span>
+                <a style="cursor:pointer"><span>宽松</span></a>
+                <a style="cursor:pointer"><span>修身</span></a>
+                <a style="cursor:pointer"><span>正常</span></a>
+            </div>
+            <div class="right-list1">
+                <span class="span1">更多：</span>
+                <span><input ng-model="Search1" class="more" type="text" placeholder="Search！"/></span>
+            </div>
+            <!---------------------------------->
+            <div class="paixu">
+                <span><a style="cursor:pointer">默认</a></span>
+                <span><a style="cursor:pointer">价格【低-高】</a></span>
+                <span><a style="cursor:pointer">价格【高-低】</a></span>
+                <span><a style="cursor:pointer">折扣【高-低】</a></span>
+                <span><input class="checkbox" type="button"/> 新品</span>
+                <span><input class="checkbox" type="button"/> 打折</span>
+                <span><input class="checkbox" type="button"/> 限量</span>
+            </div>
+            <!------------list--------------->
+            <div class="row-list-coat">
+                <label>
+                    <div class="row-list" ng-repeat="listImg in listData | filter:Search1">
+                        <a style="cursor:pointer"><span class="new">NEW</span></a>
+                        <a style="cursor: pointer" ng-click="goInfo(listImg.p_id)"><div class="row-list-img"><img class="row-img" ng-src="../images/all/{{listImg.p_index_imgLIST}}" alt=""/></div></a>
+                        <a style="cursor:pointer"><p class="info-text">{{listImg.p_name}}</p></a>
+                        <a style="cursor:pointer"><span class="brand-text">{{listImg.p_brand}}</span></a>
+                        <a style="cursor:pointer"><p class="price">￥{{listImg.p_price}}</p></a>
+                    </div>
+                    <!--<div class="row-list">-->
+                        <!--<a style="cursor:pointer"><span class="new">NEW</span></a>-->
+                        <!--<a style="cursor:pointer"><div class="row-list-img"><img class="row-img" src="../images/list/lis1.jpg" alt=""/></div></a>-->
+                        <!--<a style="cursor:pointer"><p class="info-text">Shapeless 男士简约纯色休闲短裤</p></a>-->
+                        <!--<a style="cursor:pointer"><span class="brand-text">Shapeless</span></a>-->
+                        <!--<a style="cursor:pointer"><p class="price">￥339</p></a>-->
+                    <!--</div>-->
+                    <!--<div class="row-list">-->
+                        <!--<a style="cursor:pointer"><span class="new">NEW</span></a>-->
+                        <!--<a style="cursor:pointer"><div class="row-list-img"><img class="row-img" src="../images/list/02ad06bca9a3c04e6e768c6a518a237d10.jpg" alt=""/></div></a>-->
+                        <!--<a style="cursor:pointer"><p class="info-text">Shapeless 几何字母印花短袖T恤</p></a>-->
+                        <!--<a style="cursor:pointer"><span class="brand-text">Shapeless</span></a>-->
+                        <!--<a style="cursor:pointer"><p class="price">￥118</p></a>-->
+                    <!--</div>-->
+                    <!--<div class="row-list last_margin">-->
+                        <!--<a style="cursor:pointer"><span class="new">NEW</span></a>-->
+                        <!--<a style="cursor:pointer"><div class="row-list-img"><img class="row-img" src="../images/list/list2.jpg" alt=""/></div></a>-->
+                        <!--<a style="cursor:pointer"><p class="info-text">Shapeless 男士叠层设计休闲短裤</p></a>-->
+                        <!--<a style="cursor:pointer"><span class="brand-text">Shapeless</span></a>-->
+                        <!--<a style="cursor:pointer"><p class="price">￥319</p></a>-->
+                    <!--</div>-->
+                </label>
+                <!--========================list======================================-->
+                <div class="clear"></div>
+                <div class="page-info">
+                </div>
+            </div>
+        </div>
+        <!------------------------------->
+        <div class="clear"></div>
+    </div>
+</div>
+<!--==================================================================-->
+<div class="footer">
+    <ul class="footer-ul">
+        <li><a style="cursor:pointer">关于我们</a></li>
+        <li><a style="cursor:pointer">联系我们</a></li>
+        <li><a style="cursor:pointer">版权声明</a></li>
+        <li><a style="cursor:pointer">隐私条款</a></li>
+        <li><a style="cursor:pointer">意见反馈</a></li>
+        <li id="footer-li-last"><a style="cursor:pointer">友情链接</a></li>
+        <div class="clear"></div>
+    </ul>
+    <p class="footer-p">CopyRight &copy; 2015 南京新與力文化傳播有限公司 蘇ICP備09011225號</p>
+</div>
+<!--</body>-->
+<!--<script src="../js/list.js"></script>-->
+<!--</html>-->

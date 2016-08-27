@@ -1,0 +1,144 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head lang="en">-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title></title>-->
+    <!--<link rel="stylesheet" href="../css/normalize.css"/>-->
+    <link rel="stylesheet" href="../css/info.css"/>
+    <!--<script src="../javascripts2/jquery-1.11.2-min.js"></script>-->
+<!--</head>-->
+<!--<body>-->
+<header>
+    <span><img class="shake" src="../images/home/returntop.png"></span>
+    <div class="nav">
+        <ul class="nav-ul">
+            <li><a style="cursor:pointer">YOHO!</a></li>
+            <li><a style="cursor:pointer">YOHO!Buy</a></li>
+            <li><a style="cursor:pointer">YOHO!Boys</a></li>
+            <li><a style="cursor:pointer">YOHO!Girls</a></li>
+            <li><a style="cursor:pointer">YOHO!Show</a></li>
+            <li><a style="cursor:pointer">YOHO!OD</a></li>
+            <li><a>
+                <span ng-show="user" style="color: gold;cursor: pointer"><img class="ph" src="../images/home/phone.png" alt=""/>欢迎你:{{phone[0].u_name}}<label ng-click="logOut()" style="cursor: pointer;color:red;margin-left: 20px">注销</label></span>
+                <span ng-hide="user"  style="cursor: pointer" ng-click="goLogin()" id="login"><img class="ph" src="../images/home/phone.png" alt=""/>请登录</span>
+            </a></li>
+            <li ng-hide="user"><a style="cursor: pointer" ng-click="goReg()"><img class="ph" src="../images/home/phone.png" alt=""/>注册</a></li>
+            <div class="clear"></div>
+        </ul>
+    </div>
+    <div class="logo"><img src="../images/home/logo.png" alt=""/></div>
+</header>
+<!--============content!!!!start============-->
+<div class="content-warp">
+    <!--======content1=========-->
+    <div class="content-1">
+        <span><img src="" alt=""/></span>
+        <ul class="content-1-ul2">
+            <li class="content-1-ul2-phone"><a style="cursor:pointer"><img class="phone" src="../images/home/phone.png" alt=""/></a><span style="color:#256bff">get our app!</span></li>
+            <li>
+                <a style="position: relative"><input id="search" type="text" placeholder="Search!"/><img class="fangdajing" src="../images/home/searchbutton.png" alt=""/></a>
+            </li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    <!----------content-infoimg-------->
+    <div class="content-infoimg"></div>
+    <!--==================================-->
+    <div class="contentinfo">
+        <p class="contentinfo-p">Shapeless</p>
+    </div>
+    <!--==================================-->
+
+
+    <div class="info-show" ng-repeat="infoImg in infoData">
+        <div class="info-show-left">
+            <img  ng-src="../images/all/{{show}}" alt=""/>
+            <!--<img  ng-src="../images/all2/{{infoImg.p_detail_imgDA[1]}}" alt=""/>-->
+        </div>
+        <div class="info-show-center">
+            <a ng-click="showLeftImg($index)" ng-repeat="centerImg in infoImg.p_detail_imgXIAO" ><img style="cursor: pointer" id="small_one" ng-src="../images/all/{{centerImg}}" alt=""/></a>
+        </div>
+        <div class="info-show-right">
+            <h4 class="h4">{{infoImg.p_name}}</h4>
+            <span class="span-brand">{{infoImg.p_brand}}</span>
+            <p><span class="price1">市场价：</span><span class="price2">￥{{infoImg.p_price}}</span></p>
+            <p><img ng-src="../images/all/{{infoImg.p_detail_imgINFO}}" alt=""/></p>
+            <!----------------->
+            <div class="Discount">
+                <p><span class="Discount1">打折</span><span>【优品推介】满￥799享7.8折</span></p>
+                <p><span class="Discount1">打折</span><span>【优品推介】满￥499享8.8折</span></p>
+                <p><span class="Discount1">加价购</span><span>【全场99元加价购】</span></p>
+                <p><span class="Discount1">加价购</span><span>【全场59元加价购】</span></p>
+                <p><span class="Discount1">加价购</span><span>【全场39元加价购】</span></p>
+            </div>
+            <!----------------->
+            <div class="buy">
+                <p><span class="select">选颜色：</span><span><img class="suonuetu" ng-src="../images/all/{{infoImg.p_detail_imgCHIMA}}" alt=""/></span></p>
+                <p>
+                    <span class="select">选尺码：</span>
+                    <span><a ng-click="sizeX('S')" style="cursor: pointer;">S</a></span>
+                    <span><a ng-click="sizeX('M')" style="cursor: pointer;">M</a></span>
+                    <span><a ng-click="sizeX('L')" style="cursor: pointer;">L</a></span>
+                    <span><a ng-click="sizeX('XL')" style="cursor: pointer;">XL</a></span>
+                </p>
+                <p><span class="select">选数量：</span>
+                    <span>
+                        <input ng-click="minus()" id="subtraction" class="quantity" type="button" value="-"/>
+                        <input ng-model="count" class="number" type="text"/>
+                        <input ng-click="add()" id="add" class="quantity" type="button" value="+"/>
+                    </span>
+                </p>
+                <div>
+                    <input ng-click="add_car()" ng-show="addColor" class="buying" type="button" value="添加到购物车"/>
+                    <input ng-click="add_car()" ng-hide="addColor" class="buying2" type="button" value="添加到购物车"/>
+                    <input ng-click="goCar()" class="collection" type="button" value="去结算"/>
+                </div>
+                <!----------------------------->
+                <div class="Share">
+                    <span class="Share-span">分享：</span>
+                    <a style="cursor:pointer"><img src="../images/info/qq.png" alt=""/></a>
+                    <a style="cursor:pointer"><img src="../images/info/renren.png" alt=""/></a>
+                    <a style="cursor:pointer"><img src="../images/info/weibo.png" alt=""/></a>
+                    <a style="cursor:pointer"><img src="../images/info/zhifubao.png" alt=""/></a>
+                    <a style="cursor:pointer"><img src="../images/info/iconfont-weixin.png" alt=""/></a>
+                    <a style="cursor:pointer"><img src="../images/info/douban.png" alt=""/></a>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!--==================================-->
+    <!--<span ng-repeat="bottomImg in infoImg.p_intro_imgJIESHAO">-->
+    <span ng-repeat="bottomImg in infoData">
+        <div class="commodity-info1">
+            <img src="../images/info/02-19_03.png" alt=""/>
+        </div>
+        <div class="commodity-info1 bag">
+            <!--<img src="../images/info/49.jpg" alt=""/>-->
+        </div>
+
+        <div ng-repeat="listBottomImg in bottomImg.p_intro_imgJIESHAO" class="commodity-info1 bag">
+            <img ng-src="../images/all/{{listBottomImg}}" alt=""/>
+        </div>
+        <div class="commodity-info1">
+            <img src="../images/info/br_process_1.png" alt=""/>
+            <img src="../images/info/br_process_2.png" alt=""/>
+        </div>
+    </span>
+</div>
+<!--==================================================================-->
+<div class="footer">
+    <ul class="footer-ul">
+        <li><a style="cursor:pointer">关于我们</a></li>
+        <li><a style="cursor:pointer">联系我们</a></li>
+        <li><a style="cursor:pointer">版权声明</a></li>
+        <li><a style="cursor:pointer">隐私条款</a></li>
+        <li><a style="cursor:pointer">意见反馈</a></li>
+        <li id="footer-li-last"><a style="cursor:pointer">友情链接</a></li>
+        <div class="clear"></div>
+    </ul>
+    <p class="footer-p">CopyRight &copy; 2015 南京新與力文化傳播有限公司 蘇ICP備09011225號</p>
+</div>
+<!--</body>-->
+<!--<script src="../js/info.js"></script>-->
+<!--</html>-->

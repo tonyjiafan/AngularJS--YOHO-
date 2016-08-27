@@ -1,0 +1,199 @@
+body{
+    font-size: 16px;;
+    /*font-family: "Mriosoft YaHei","Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font-family: "Microsoft YaHei","Helvetica Neue";
+}
+.clear{
+    clear: both;
+}
+header{
+    width: 7.5rem;
+    height: 0.62rem;
+    background: #444444;
+    padding-top: 0.18rem;
+}
+.header-coat{
+    width: 6.95rem;
+    height: 0.5rem;
+    margin: 0 auto;
+}
+.header-span1{
+    display: block;
+    float: left;
+}
+.header-span1 img{
+    vertical-align: middle;
+    width: 0.24rem;
+    height: 0.43rem;
+}
+.header-span2{
+    margin-left: 2.35rem;
+    color: white;
+    font-size: 0.3rem;
+}
+.header-span3{
+    display: block;
+    float: right;
+}
+.header-span3 img{
+    width: 0.42rem;
+    height: 0.3rem;
+    vertical-align: middle;
+}
+/*--------------------------------------*/
+.content-warp{
+    width: 7.5rem;
+    /*height: 20rem;*/
+    /*padding-bottom: 10rem;*/
+}
+.content1{
+    width: 7.5rem;
+    height: 9.97rem;
+}
+.content1 img{
+    width: 7.5rem;
+    height: 9.97rem;
+}
+.price{
+    color:orangered;
+    font-size: 0.2rem;
+    font-weight: bold;
+    width: 4rem;
+    margin-left: 0.3rem;
+}
+/*-----------------*/
+.content2{
+    width: 7.5rem;
+    padding: 0.3rem 0;
+}
+.content2 img{
+    width: 7.5rem;
+    height: 1.08rem;
+}
+.content2-last-img{
+    width: 7.5rem;
+    height: 3.79rem !important;
+}
+.content2-last-img1{
+    width: 7.5rem;
+    height: 2.66rem !important;
+}
+.content2-last-img2{
+    width: 7.5rem;
+    height: 4.96rem !important;
+}
+/*--------------------------------------------*/
+.content3{
+    width: 6.80rem;
+    /*height: 10rem;*/
+    overflow: hidden;
+    margin:  0 auto;
+}
+.content3 img{
+    width: 6.60rem;
+    height: 10rem;
+}
+/*------------buying--------------------*/
+.buying{
+    overflow: hidden;
+    display: none;
+    width: 7.2rem;
+    padding: 0.3rem;
+    background: #ffffff;
+    border-top: 0.02rem solid #c4c4cd;
+    position: fixed;
+    bottom: 1.02rem;
+    /*outline: 1px solid red;*/
+}
+.buying-img{
+    width: 0.9rem;
+    height: 1.2rem;
+}
+.brand{
+    color: #262626;
+    margin: 0.2rem 0.1rem;
+}
+.info-text{
+    width: 5.4rem;
+    float: right;
+    display: block;
+    vertical-align: middle;
+    /*outline: 1px solid yellow;*/
+}
+.text{
+    display: inline-block;
+    margin: 0.2rem;
+}
+.text img{
+    vertical-align: middle;
+    width: 0.64rem;
+    height: 0.42rem;
+}
+/*-------------------------------*/
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 7.5rem;
+    background: #ffffff;
+    /*height: 4rem;*/
+    padding: 0.1rem 0;
+    border-top: 0.01rem solid #999999;
+}
+.img-coat{
+    width: 6.45rem;
+    margin: 0 auto;
+}
+.img-caot span{
+    display: block;
+    vertical-align: middle;
+}
+.footer-span1{
+    float: left;
+}
+.footer-img1{
+    width: 0.47rem;
+    height: 0.78rem;
+}
+.footer-span2{
+    margin-left: 1.65rem;
+}
+.addbtn{
+    width: 2.6rem;
+    height: 0.78rem;
+    background: #d0021b;
+    color: white;
+    font-size: 0.3rem;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 0.03rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+.footer-span3{
+    float: right;
+}
+.footer-img3{
+    width: 0.43rem;
+    height: 0.78rem;
+    /*margin: 0 !important;*/
+}
+
+/*----------------------------*/
+#car{
+    /*outline: 1px solid yellow;*/
+    position: fixed;
+    right: 0;
+    top: 7.5rem
+    /*width: 0.9rem;*/
+    /*height: 0.8rem;*/
+}
+#car a{
+    padding: 0.1rem 0.1rem;
+    color: white;
+    background:orange;
+    font-size: 0.2rem;
+    word-wrap: break-word;
+    border-radius: 0.03rem ;
+    box-shadow: 0.01rem 0.01rem 0.01rem red;
+}

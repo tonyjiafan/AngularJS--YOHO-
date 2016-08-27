@@ -1,0 +1,79 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head lang="en">-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title></title>-->
+    <link rel="stylesheet" href="../css/reg.css"/>
+<header>
+    <img class="logo" src="../images/login/logo_e.png" alt=""/>
+    <ul class="head-nav">
+        <li><a href="home.html">YOHO!有货</a></li>
+        <li><a href="login.html"><img class="ph" src="../images/login/phone.png" alt=""/>登录</a></li>
+        <!--<li><a href="./reg.html"><img class="ph" src="../images/login/phone.png" alt=""/>Reg!</a></li>-->
+        <li><a href="#">MY有货</a></li>
+        <li><a href="#">订单中心</a></li>
+        <li><a href="#">帮助中心</a></li>
+        <li><a href="#"><img class="ph" src="../images/login/phone.png" alt=""/>400-889-9646</a></li>
+        <div class="clear"></div>
+    </ul>
+    <div class="clear"></div>
+</header>
+<!-------------------------------->
+<div class="log-content-warp">
+    <div class="log-con-left">
+        <a href="#"><img src="../images/login/right.png" alt=""/></a>
+    </div>
+    <!----------------------------------------------------------->
+    <div class="log-con-right">
+        <div class="log-con-right1 box">
+            <select name="country" id="number">
+                <option value="china">中国</option>
+                <option value="hk">中国香港</option>
+                <option value="taiwan">中国台湾</option>
+                <option value="ribrn">日本</option>
+                <option value="hanguo">韩国</option>
+                <option value="aodaliya">澳大利亚</option>
+                <option value="jianada">加拿大</option>
+            </select>
+        </div>
+        <div class="log-con-right2 box">
+            <div class="phone">+86</div>
+            <input ng-model="isPhone"  ng-blur="isUsername()" name="isPhone" id="input1" class="input" type="text" placeholder="请输入正确的手机号码！"/>
+            <span ng-show="tips" style="color:limegreen;font-size: 14px;">{{userInfo}}</span>
+            <span ng-hide="tips" style="color:red;font-size: 14px; ">{{userInfo}}</span>
+        </div>
+        <div class="log-con-right3 box">
+            <input type="button" class="phone2" value="获取短信验证码"/>
+            <input id="input2" class="input" type="text" placeholder="请输入手机验证码！"/>
+        </div>
+        <div class="log-con-right4 box">
+            <input ng-model="isPwd" ng-blur="isPassword()" class="input" type="text" placeholder="8-15位包含大小写字母数字和特殊符号！"/>
+            <span ng-show="tips2" style="color:limegreen;font-size: 14px;">{{pwdInfo}}</span>
+            <span ng-hide="tips2" style="color:red;font-size: 14px; ">{{pwdInfo}}</span>
+        </div>
+        <div class="log-con-right5 box">
+            <input class="checkbox" type="checkbox" checked="checked"/>我已经阅读并遵守<span><a class="yoho" href="#">YOHO!有货服务条款</a></span>
+        </div>
+        <div class="log-con-right6 box">
+            <input ng-click="isReg()" name="isReg"  class="input3" type="button" value="立即注册"/>
+            <span ng-show="tips3" style="color:limegreen;font-size: 14px;">{{addInfo}}</span>
+            <span ng-hide="tips3" style="color:red;font-size: 14px; ">{{addInfo}}</span>
+        </div>
+        <div id="box7" class="log-con-right7 box">
+            <span class="login-span">我已注册YOHO!有货账号 <a href="login.html">快速登录</a></span>
+        </div>
+    </div>
+</div>
+<!---------------------------------->
+<footer>
+    <ul class="footer-ul">
+        <li><a href="#">关于我们</a></li>
+        <li><a href="#">联系我们</a></li>
+        <li><a href="#">版权声明</a></li>
+        <li><a href="#">隐私条款</a></li>
+        <li><a href="#">意见反馈</a></li>
+        <li id="footer-li-last"><a href="#">友情链接</a></li>
+        <div class="clear"></div>
+    </ul>
+    <p class="footer-p">CopyRight &copy; 2015 南京新與力文化傳播有限公司 蘇ICP備09011225號</p>
+</footer>

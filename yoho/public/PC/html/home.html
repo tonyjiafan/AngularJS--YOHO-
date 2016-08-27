@@ -1,0 +1,318 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head lang="en">-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title></title>-->
+    <!--<link rel="stylesheet" href="../css/normalize.css"/>-->
+    <link rel="stylesheet" href="../css/home.css"/>
+    <!--<script src="../js/home.js"></script>-->
+<!--</head>-->
+<!--<body>-->
+    <span><a href="#home.html#q1"><img class="shake" src="../images/home/returntop.png"></a></span>
+    <header>
+        <div class="nav">
+            <ul class="nav-ul">
+                <li><a class="na-a" href="http://www.yoho.cn/">YOHO!</a></li>
+                <li><a class="na-a" href="http://www.yohobuy.com/">YOHO!Buy</a></li>
+                <li><a class="na-a" href="http://hk.yohoboys.com/index.html">YOHO!Boys</a></li>
+                <li><a class="na-a" href="http://www.yohogirls.com/">YOHO!Girls</a></li>
+                <li><a class="na-a" href="http://app.yohoshow.com/">YOHO!Show</a></li>
+                <li><a class="na-a" href="http://www.yohood.cn/">YOHO!OD</a></li>
+                <!--<li><a ><img class="ph" src="../images/home/phone.png" alt=""/>Login!</a></li>-->
+                <li>
+                    <a id="q1">
+                        <span ng-show="user" style="color: gold;cursor: pointer"><img class="ph" src="../images/home/phone.png" alt=""/>欢迎你:{{phone[0].u_name}}<label ng-click="logOut()" style="cursor: pointer;color:red;margin-left: 20px">注销</label></span>
+                        <span ng-hide="user"  style="cursor: pointer" ng-click="goLogin()" id="login"><img class="ph" src="../images/home/phone.png" alt=""/>请登录</span>
+                    </a>
+                </li>
+                <li ng-hide="user"><a style="cursor: pointer" class="na-a" ng-click="goReg()"><img class="ph" src="../images/home/phone.png" alt=""/>注册</a></li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+        <div class="logo"><img src="../images/home/logo.png" alt=""/></div>
+    </header>
+    <!--============content!!!!start============-->
+    <div class="content-warp">
+        <!--======content1=========-->
+        <div class="content-1">
+            <ul class="content-1-ul">
+                <li><a class="first-a" href=""><img src="../images/home/h3.png" alt=""/></a></li>
+                <li><a ng-click="goList()"><img src="../images/home/h5.png" alt=""/></a></li>
+                <li><a href="list.html"><img src="../images/home/h7.png" alt=""/></a></li>
+                <li><a href="list.html"><img src="../images/home/h9.png" alt=""/></a></li>
+                <li><a href="list.html"><img src="../images/home/h11.png" alt=""/></a></li>
+                <li><a href="list.html"><img src="../images/home/h13.png" alt=""/></a></li>
+                <div class="clear"></div>
+            </ul>
+        <!-------------------------------------->
+            <ul class="content-1-ul2">
+                <li class="content-1-ul2-phone"><a style="cursor:pointer"><img class="phone" src="../images/home/phone.png" alt=""/></a><span style="color:#256bff">get our app!</span></li>
+                <li>
+                    <a style="position: relative"><input id="search" type="text" placeholder="Search!"/><img class="fangdajing" src="../images/home/searchbutton.png" alt=""/></a>
+                    <!---->
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+      <!----------------------------shipin==============-->
+        <img class="play-video" id="play_Btn" src="../images/home/vedio.png" alt=""/>
+        <div id="play">
+            <video controls="controls">
+                <source src="../images/home/yohowuyifan.mp4" type="video/mp4">
+            </video>
+        </div>
+        <!--================content2==================-->
+        <div class="cnt2-coat">
+            <div id="prev" class="changeImg_left"></div>
+            <div id="next" class="changeImg_right"></div>
+        <div class="content2-warp">
+            <div class="changeImg" id="container">
+                <div id="listImg" style=" left: -1080px;" class="change_list_img"></a>
+                    <a style="cursor:pointer"><img class="big-chang1"  src="../images/home/9.jpg" alt=""/></a>
+                    <a style="cursor:pointer"><img class="big-chang1"  src="../images/home/2.jpg" alt=""/></a>
+                    <a style="cursor:pointer"><img class="big-chang1"  src="../images/home/3.jpg" alt=""/></a>
+                    <a style="cursor:pointer"><img class="big-chang1"  src="../images/home/4.jpg" alt=""/></a>
+                    <a style="cursor:pointer"><img class="big-chang1"  src="../images/home/5.jpg" alt=""/></a>
+                    <a style="cursor:pointer"><img class="big-chang1"  src="../images/home/6.jpg" alt=""/></a>
+                    <a style="cursor:pointer"><img class="big-chang1"  src="../images/home/7.jpg" alt=""/></a>
+                    <a style="cursor:pointer"><img class="big-chang1"  src="../images/home/8.jpg" alt=""/></a>
+                    <a style="cursor:pointer"><img class="big-chang1"  src="../images/home/9.jpg" alt=""/></a>
+                    <a style="cursor:pointer"><img class="big-chang1"  src="../images/home/2.jpg" alt=""/></a>
+                </div>
+            </div>
+            <div class="spot" id="buttons" >
+                <span class="show"  index="1"></span>
+                <span class="spot_span"  index="2"></span>
+                <span class="spot_span"  index="3"></span>
+                <span class="spot_span"  index="4"></span>
+                <span class="spot_span"  index="5"></span>
+                <span class="spot_span"  index="6"></span>
+                <span class="spot_span"  index="7"></span>
+                <span class="spot_span"  index="8"></span>
+            </div>
+        </div>
+        </div>
+        <!--==========content3================-->
+        <div class="content3-warp">
+            <div id="cnt3_div1" class="img-big"><img src="../images/home/tv1.jpg" alt=""/></div>
+            <div class="img-big"><img src="../images/home/tv2.jpg" alt=""/></div>
+            <div class="img-big"><img src="../images/home/tv3.jpg" alt=""/></div>
+            <div class="img-big"><img src="../images/home/tv4.jpg" alt=""/></div>
+            <div class="img-big"><img src="../images/home/tv5.jpg" alt=""/></div>
+            <div class="img-big"><img src="../images/home/tv7.jpg" alt=""/></div>
+            <div class="clear"></div>
+        </div>
+        <!-------++++++++++++++++++++++--content=============-->
+        <div class="content">
+            <div class="content-info">
+                <div class="hot"><span>人气单品</span></div>
+                <div class="list">
+                    <a style="cursor:pointer">暖春优选</a>|
+                    <a style="cursor:pointer">裤泪精选</a>|
+                    <a style="cursor:pointer">潮鞋必备</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="info-coat">
+                <div class="content-left">
+                    <div class="brand">
+                        <div class="divs chang-big"><a style="cursor:pointer"><img class="big-chang" src="../images/home/info6.jpg" alt=""/></a></div>
+                        <div id="big-div1" class="divs">
+                            <div class="brand_list divs" style="top: -240px" id="brand_list">
+                                <a style="cursor:pointer"><img class="big-chang" src="../images/home/brand8.jpg" alt=""/></a>
+                                <a style="cursor:pointer"><img class="big-chang" src="../images/home/brand1.jpg" alt=""/></a>
+                                <a style="cursor:pointer"><img class="big-chang" src="../images/home/brand2.jpg" alt=""/></a>
+                                <a style="cursor:pointer"><img class="big-chang" src="../images/home/brand3.jpg" alt=""/></a>
+                                <a style="cursor:pointer"><img class="big-chang" src="../images/home/brand4.jpg" alt=""/></a>
+                                <a style="cursor:pointer"><img class="big-chang" src="../images/home/brand8.jpg" alt=""/></a>
+                                <a style="cursor:pointer"><img class="big-chang" src="../images/home/brand1.jpg" alt=""/></a>
+                            </div>
+                        </div>
+                        <div class="divs chang-big"><a style="cursor:pointer"><img class="big-chang" src="../images/home/info7.jpg" alt=""/></a></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="brand">
+                        <div class="divs chang-big"><a style="cursor:pointer"><img class="big-chang" src="../images/home/info2.jpg" alt=""/></a></div>
+                        <div class="divs chang-big"><a style="cursor:pointer"><img class="big-chang" src="../images/home/info5.jpg" alt=""/></a></div>
+                        <div id="big-div2" class="divs">
+                            <div class="brand_list" style="top: -240px" id="brand_list2">
+                                <a style="cursor:pointer"><img class="big-chang" src="../images/home/brand10.jpg" alt=""/></a>
+                                <a style="cursor:pointer"><img class="big-chang" src="../images/home/brand5.jpg" alt=""/></a>
+                                <a style="cursor:pointer"><img class="big-chang" src="../images/home/brand6.jpg" alt=""/></a>
+                                <a style="cursor:pointer"><img class="big-chang" src="../images/home/brand7.jpg" alt=""/></a>
+                                <a style="cursor:pointer"><img class="big-chang" src="../images/home/brand9.jpg" alt=""/></a>
+                                <a style="cursor:pointer"><img class="big-chang" src="../images/home/brand10.jpg" alt=""/></a>
+                                <a style="cursor:pointer"><img class="big-chang" src="../images/home/brand5.jpg" alt=""/></a>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <!---------------->
+                <div class="content-right">
+                    <img src="../images/home/021b1be93a52cbff0c757063ee1bd3ea1c.png" alt=""/>
+                    <div class="content-right-bottom"><img src="../images/home/028dca95e69c4abcd15a55df9b68463f4f.jpg" alt=""/></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!--==========content4================-->
+        <div class="content4-warp">
+            <div class="cnt4-coat">
+                <div class="nt4-left cnt-div">
+                    <div class="nt4-left-top"><a style="cursor:pointer"><img src="../images/home/01456aadc58ae531d711c13076e3275369.jpg" alt=""/></a></div>
+                    <div class="nt4-left-bottom">
+                        <a style="cursor:pointer"><p class="text1">襪子鞋界強者誕生</p></a>
+                        <a style="cursor:pointer"><span class="text2">Nike LunarEpic Flyknit震撼發佈</span></a>
+                        <a style="cursor:pointer"><p class="date">Fashion|Sneakrs|03 03 2016</p></a>
+                        <a style="cursor:pointer"><p class="text3">北京時間2016年3月3日21：00， Nike LunarEpic Flyknit 正式亮相，採用時下最流行的中高幫鞋領設計以及全新生產工藝，旨在為跑者帶來極致貼合、流暢步伐以及最佳的柔軟腳感。Yoho!Boy此次更是率先上腳，為大家帶來獨家體驗報告。基於足球靴設計的啟發，參考 Nike Magista足球鞋的設計，設計師們開始著手打造一雙能夠帶來同樣性能的跑鞋，同時滿</p></a>
+                    </div>
+                </div>
+                <!------------------>
+                <div class="nt4-center cnt-div">
+                    <div class="nt4-left-top"><a style="cursor:pointer"><img src="../images/home/021ef838649e87b867026d0f662f6fdb42.jpg" alt=""/></a></div>
+                    <div class="nt4-left-bottom">
+                        <a style="cursor:pointer"><p class="text1">襪子鞋界強者誕生</p></a>
+                        <a style="cursor:pointer"><span class="text2">Nike LunarEpic Flyknit震撼發佈</span></a>
+                        <a style="cursor:pointer"><p class="date">Fashion|Sneakrs|03 03 2016</p></a>
+                        <a style="cursor:pointer"><p class="text3">北京時間2016年3月3日21：00， Nike LunarEpic Flyknit 正式亮相，採用時下最流行的中高幫鞋領設計以及全新生產工藝，旨在為跑者帶來極致貼合、流暢步伐以及最佳的柔軟腳感。Yoho!Boy此次更是率先上腳，為大家帶來獨家體驗報告。基於足球靴設計的啟發，參考 Nike Magista足球鞋的設計，設計師們開始著手打造一雙能夠帶來同樣性能的跑鞋，同時滿</p></a>
+                    </div>
+                </div>
+                <!---------------------------->
+                <div class="nt4-right cnt-div">
+                    <div class="nt4-left-top"><a style="cursor:pointer"><img src="../images/home/018354b21ed315b43b73869d1144c87988.jpg" alt=""/></a></div>
+                    <div class="nt4-left-bottom">
+                        <a style="cursor:pointer"><p class="text1">襪子鞋界強者誕生</p></a>
+                        <a style="cursor:pointer"><span class="text2">Nike LunarEpic Flyknit震撼發佈</span></a>
+                        <a style="cursor:pointer"><p class="date">Fashion|Sneakrs|03 03 2016</p></a>
+                        <a style="cursor:pointer"><p class="text3">北京時間2016年3月3日21：00， Nike LunarEpic Flyknit 正式亮相，採用時下最流行的中高幫鞋領設計以及全新生產工藝，旨在為跑者帶來極致貼合、流暢步伐以及最佳的柔軟腳感。Yoho!Boy此次更是率先上腳，為大家帶來獨家體驗報告。基於足球靴設計的啟發，參考 Nike Magista足球鞋的設計，設計師們開始著手打造一雙能夠帶來同樣性能的跑鞋，同時滿</p></a>
+                    </div>
+                </div>
+                </div>
+            <div class="clear"></div>
+            <!------------content(含3个div)---------------------------->
+            <div class="cnt4-coat">
+                <div class="nt4-left cnt-div">
+                    <div class="nt4-left-top"><a style="cursor:pointer"><img src="../images/home/01a75b4dfef5f6af85b4d671669980fb53.jpg" alt=""/></a></div>
+                    <div class="nt4-left-bottom">
+                        <a style="cursor:pointer"><p class="text1">襪子鞋界強者誕生</p></a>
+                        <a style="cursor:pointer"><span class="text2">Nike LunarEpic Flyknit震撼發佈</span></a>
+                        <a style="cursor:pointer"><p class="date">Fashion|Sneakrs|03 03 2016</p></a>
+                        <a style="cursor:pointer"><p class="text3">北京時間2016年3月3日21：00， Nike LunarEpic Flyknit 正式亮相，採用時下最流行的中高幫鞋領設計以及全新生產工藝，旨在為跑者帶來極致貼合、流暢步伐以及最佳的柔軟腳感。Yoho!Boy此次更是率先上腳，為大家帶來獨家體驗報告。基於足球靴設計的啟發，參考 Nike Magista足球鞋的設計，設計師們開始著手打造一雙能夠帶來同樣性能的跑鞋，同時滿</p></a>
+                    </div>
+                </div>
+                <!------------------>
+                <div class="nt4-center cnt-div">
+                    <div class="nt4-left-top"><a style="cursor:pointer"><img src="../images/home/nt11.jpg" alt=""/></a></div>
+                    <div class="nt4-left-bottom">
+                        <a style="cursor:pointer"><p class="text1">襪子鞋界強者誕生</p></a>
+                        <a style="cursor:pointer"><span class="text2">Nike LunarEpic Flyknit震撼發佈</span></a>
+                        <a style="cursor:pointer"><p class="date">Fashion|Sneakrs|03 03 2016</p></a>
+                        <a style="cursor:pointer"><p class="text3">北京時間2016年3月3日21：00， Nike LunarEpic Flyknit 正式亮相，採用時下最流行的中高幫鞋領設計以及全新生產工藝，旨在為跑者帶來極致貼合、流暢步伐以及最佳的柔軟腳感。Yoho!Boy此次更是率先上腳，為大家帶來獨家體驗報告。基於足球靴設計的啟發，參考 Nike Magista足球鞋的設計，設計師們開始著手打造一雙能夠帶來同樣性能的跑鞋，同時滿</p></a>
+                    </div>
+                </div>
+                <!---------------------------->
+                <div class="nt4-right cnt-div">
+                    <div class="nt4-left-top"><a style="cursor:pointer"><img src="../images/home/nt6.gif" alt=""/></a></div>
+                    <div class="nt4-left-bottom">
+                        <a style="cursor:pointer"><p class="text1">襪子鞋界強者誕生</p></a>
+                        <a style="cursor:pointer"><span class="text2">Nike LunarEpic Flyknit震撼發佈</span></a>
+                        <a style="cursor:pointer"><p class="date">Fashion|Sneakrs|03 03 2016</p></a>
+                        <a style="cursor:pointer"><p class="text3">北京時間2016年3月3日21：00， Nike LunarEpic Flyknit 正式亮相，採用時下最流行的中高幫鞋領設計以及全新生產工藝，旨在為跑者帶來極致貼合、流暢步伐以及最佳的柔軟腳感。Yoho!Boy此次更是率先上腳，為大家帶來獨家體驗報告。基於足球靴設計的啟發，參考 Nike Magista足球鞋的設計，設計師們開始著手打造一雙能夠帶來同樣性能的跑鞋，同時滿</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <!------------content(含3个div)---------------------------->
+            <div class="cnt4-coat">
+                <div class="nt4-left cnt-div">
+                    <div class="nt4-left-top"><a style="cursor:pointer"><img src="../images/home/01456aadc58ae531d711c13076e3275369.jpg" alt=""/></a></div>
+                    <div class="nt4-left-bottom">
+                        <a style="cursor:pointer"><p class="text1">襪子鞋界強者誕生</p></a>
+                        <a style="cursor:pointer"><span class="text2">Nike LunarEpic Flyknit震撼發佈</span></a>
+                        <a style="cursor:pointer"><p class="date">Fashion|Sneakrs|03 03 2016</p></a>
+                        <a style="cursor:pointer"><p class="text3">北京時間2016年3月3日21：00， Nike LunarEpic Flyknit 正式亮相，採用時下最流行的中高幫鞋領設計以及全新生產工藝，旨在為跑者帶來極致貼合、流暢步伐以及最佳的柔軟腳感。Yoho!Boy此次更是率先上腳，為大家帶來獨家體驗報告。基於足球靴設計的啟發，參考 Nike Magista足球鞋的設計，設計師們開始著手打造一雙能夠帶來同樣性能的跑鞋，同時滿</p></a>
+                    </div>
+                </div>
+                <!------------------>
+                <div class="nt4-center cnt-div">
+                    <div class="nt4-left-top"><a style="cursor:pointer"><img src="../images/home/021ef838649e87b867026d0f662f6fdb42.jpg" alt=""/></a></div>
+                    <div class="nt4-left-bottom">
+                        <a style="cursor:pointer"><p class="text1">襪子鞋界強者誕生</p></a>
+                        <a style="cursor:pointer"><span class="text2">Nike LunarEpic Flyknit震撼發佈</span></a>
+                        <a style="cursor:pointer"><p class="date">Fashion|Sneakrs|03 03 2016</p></a>
+                        <a style="cursor:pointer"><p class="text3">北京時間2016年3月3日21：00， Nike LunarEpic Flyknit 正式亮相，採用時下最流行的中高幫鞋領設計以及全新生產工藝，旨在為跑者帶來極致貼合、流暢步伐以及最佳的柔軟腳感。Yoho!Boy此次更是率先上腳，為大家帶來獨家體驗報告。基於足球靴設計的啟發，參考 Nike Magista足球鞋的設計，設計師們開始著手打造一雙能夠帶來同樣性能的跑鞋，同時滿</p></a>
+                    </div>
+                </div>
+                <!---------------------------->
+                <div class="nt4-right cnt-div">
+                    <div class="nt4-left-top"><a style="cursor:pointer"><img src="../images/home/018354b21ed315b43b73869d1144c87988.jpg" alt=""/></a></div>
+                    <div class="nt4-left-bottom">
+                        <a style="cursor:pointer"><p class="text1">襪子鞋界強者誕生</p></a>
+                        <a style="cursor:pointer"><span class="text2">Nike LunarEpic Flyknit震撼發佈</span></a>
+                        <a style="cursor:pointer"><p class="date">Fashion|Sneakrs|03 03 2016</p></a>
+                        <a style="cursor:pointer"><p class="text3">北京時間2016年3月3日21：00， Nike LunarEpic Flyknit 正式亮相，採用時下最流行的中高幫鞋領設計以及全新生產工藝，旨在為跑者帶來極致貼合、流暢步伐以及最佳的柔軟腳感。Yoho!Boy此次更是率先上腳，為大家帶來獨家體驗報告。基於足球靴設計的啟發，參考 Nike Magista足球鞋的設計，設計師們開始著手打造一雙能夠帶來同樣性能的跑鞋，同時滿</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <!------------content(含3个div)---------------------------->
+            <div class="cnt4-coat">
+                <div class="nt4-left cnt-div">
+                    <div class="nt4-left-top"><a style="cursor:pointer"><img src="../images/home/01a75b4dfef5f6af85b4d671669980fb53.jpg" alt=""/></a></div>
+                    <div class="nt4-left-bottom">
+                        <a style="cursor:pointer"><p class="text1">襪子鞋界強者誕生</p></a>
+                        <a style="cursor:pointer"><span class="text2">Nike LunarEpic Flyknit震撼發佈</span></a>
+                        <a style="cursor:pointer"><p class="date">Fashion|Sneakrs|03 03 2016</p></a>
+                        <a style="cursor:pointer"><p class="text3">北京時間2016年3月3日21：00， Nike LunarEpic Flyknit 正式亮相，採用時下最流行的中高幫鞋領設計以及全新生產工藝，旨在為跑者帶來極致貼合、流暢步伐以及最佳的柔軟腳感。Yoho!Boy此次更是率先上腳，為大家帶來獨家體驗報告。基於足球靴設計的啟發，參考 Nike Magista足球鞋的設計，設計師們開始著手打造一雙能夠帶來同樣性能的跑鞋，同時滿</p></a>
+                    </div>
+                </div>
+                <!------------------>
+                <div class="nt4-center cnt-div">
+                    <div class="nt4-left-top"><a style="cursor:pointer"><img src="../images/home/nt11.jpg" alt=""/></a></div>
+                    <div class="nt4-left-bottom">
+                        <a style="cursor:pointer"><p class="text1">襪子鞋界強者誕生</p></a>
+                        <a style="cursor:pointer"><span class="text2">Nike LunarEpic Flyknit震撼發佈</span></a>
+                        <a style="cursor:pointer"><p class="date">Fashion|Sneakrs|03 03 2016</p></a>
+                        <a style="cursor:pointer"><p class="text3">北京時間2016年3月3日21：00， Nike LunarEpic Flyknit 正式亮相，採用時下最流行的中高幫鞋領設計以及全新生產工藝，旨在為跑者帶來極致貼合、流暢步伐以及最佳的柔軟腳感。Yoho!Boy此次更是率先上腳，為大家帶來獨家體驗報告。基於足球靴設計的啟發，參考 Nike Magista足球鞋的設計，設計師們開始著手打造一雙能夠帶來同樣性能的跑鞋，同時滿</p></a>
+                    </div>
+                </div>
+                <!---------------------------->
+                <div class="nt4-right cnt-div">
+                    <div class="nt4-left-top"><a style="cursor:pointer"><img src="../images/home/nt6.gif" alt=""/></a></div>
+                    <div class="nt4-left-bottom">
+                        <a style="cursor:pointer"><p class="text1">襪子鞋界強者誕生</p></a>
+                        <a style="cursor:pointer"><span class="text2">Nike LunarEpic Flyknit震撼發佈</span></a>
+                        <a style="cursor:pointer"><p class="date">Fashion|Sneakrs|03 03 2016</p></a>
+                        <a style="cursor:pointer"><p class="text3">北京時間2016年3月3日21：00， Nike LunarEpic Flyknit 正式亮相，採用時下最流行的中高幫鞋領設計以及全新生產工藝，旨在為跑者帶來極致貼合、流暢步伐以及最佳的柔軟腳感。Yoho!Boy此次更是率先上腳，為大家帶來獨家體驗報告。基於足球靴設計的啟發，參考 Nike Magista足球鞋的設計，設計師們開始著手打造一雙能夠帶來同樣性能的跑鞋，同時滿</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <!------------content(含3个div)---------------------------->
+        </div>
+    </div>
+    <!--============content!!!!over============-->
+    <footer>
+        <div class="footer-coat" >
+            <div id="footer_div1"><img src="../images/home/y-logo.jpg" alt=""/></div>
+            <div>
+                <h1>YOHO!</h1>
+                <p>潮流時尚生活百科.</p>
+                <p>分享有趣新鮮男女生世界觀.</p>
+            </div>
+            <div><img src="../images/home/yohogirlqr.png" alt=""/></div>
+        </div>
+    </footer>
+    <div class="footer2">
+        <ul class="footer-ul">
+            <li><a style="cursor:pointer">关于我们</a></li>
+            <li><a style="cursor:pointer">联系我们</a></li>
+            <li><a style="cursor:pointer">版权声明</a></li>
+            <li><a style="cursor:pointer">隐私条款</a></li>
+            <li><a style="cursor:pointer">意见反馈</a></li>
+            <li id="footer-li-last"><a style="cursor:pointer">友情链接</a></li>
+            <div class="clear"></div>
+        </ul>
+        <p class="footer-p">CopyRight &copy; 2015 南京新與力文化傳播有限公司 蘇ICP備09011225號</p>
+    </div>
