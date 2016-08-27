@@ -7,3 +7,9 @@
 AngularJs的强大不可否认。
 
 上传这些项目是相记录自己学习成长的过程！之后会着重学习node和js面向对象的思想。
+
+1.npm install
+
+2.进入项目文件 node app.js
+
+3.项目主页    http://localhost:3000/PC/html/index.html#/home
