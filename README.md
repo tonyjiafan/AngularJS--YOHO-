@@ -13,3 +13,9 @@ AngularJs的强大不可否认。
 2.进入项目文件 node app.js
 
 3.项目主页    http://localhost:3000/PC/html/index.html#/home
+
+
+
+
+
+<img src="" />
