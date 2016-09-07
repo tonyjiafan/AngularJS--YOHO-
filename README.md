@@ -13,3 +13,15 @@ AngularJs的强大不可否认。
 2.进入项目文件 node app.js
 
 3.项目主页    http://localhost:3000/PC/html/index.html#/home
+
+<img src="https://github.com/tonyjiafan/AngularJS--YOHO-/blob/master/introImg/11.png" />
+
+<img src="https://github.com/tonyjiafan/AngularJS--YOHO-/blob/master/introImg/22.png" />
+
+<img src="https://github.com/tonyjiafan/AngularJS--YOHO-/blob/master/introImg/33.png" />
+
+<img src="https://github.com/tonyjiafan/AngularJS--YOHO-/blob/master/introImg/44.png" />
+
+<img src="https://github.com/tonyjiafan/AngularJS--YOHO-/blob/master/introImg/55.png" />
+
+<img src="https://github.com/tonyjiafan/AngularJS--YOHO-/blob/master/introImg/66.png" />
