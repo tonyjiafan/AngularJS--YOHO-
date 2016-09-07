@@ -14,14 +14,16 @@ AngularJs的强大不可否认。
 
 3.项目主页    http://localhost:3000/PC/html/index.html#/home
 
-<img src="https://github.com/tonyjiafan/AngularJS--YOHO-/blob/master/introImg/11.png" />
+AngularJS【YOHO】项目展示
 
-<img src="https://github.com/tonyjiafan/AngularJS--YOHO-/blob/master/introImg/22.png" />
+<img style="width:300px;" src="https://github.com/tonyjiafan/AngularJS--YOHO-/blob/master/introImg/11.png" />
 
-<img src="https://github.com/tonyjiafan/AngularJS--YOHO-/blob/master/introImg/33.png" />
+<img style="width:300px;" src="https://github.com/tonyjiafan/AngularJS--YOHO-/blob/master/introImg/22.png" />
 
-<img src="https://github.com/tonyjiafan/AngularJS--YOHO-/blob/master/introImg/44.png" />
+<img style="width:300px;" src="https://github.com/tonyjiafan/AngularJS--YOHO-/blob/master/introImg/33.png" />
 
-<img src="https://github.com/tonyjiafan/AngularJS--YOHO-/blob/master/introImg/55.png" />
+<img style="width:300px;" src="https://github.com/tonyjiafan/AngularJS--YOHO-/blob/master/introImg/44.png" />
 
-<img src="https://github.com/tonyjiafan/AngularJS--YOHO-/blob/master/introImg/66.png" />
+<img style="width:300px;" src="https://github.com/tonyjiafan/AngularJS--YOHO-/blob/master/introImg/55.png" />
+
+<img style="width:300px;" src="https://github.com/tonyjiafan/AngularJS--YOHO-/blob/master/introImg/66.png" />
